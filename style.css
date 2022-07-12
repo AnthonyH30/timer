@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #000;
+    --text-color: #fff;
+    --green-start: #1bd618;
+    --blue-pause: #1844d6;
+    --red-reset: #e01010;
+}
+body{
+    background-color: var(--background-color);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle1{
+    background-color: var(--text-color);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.circle2{
+    background-color: var(--background-color);
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour{
+    color: var(--text-color);
+}
+
+.btns{
+    width: 320px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn{
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-start{
+    background-color: var(--green-start);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-stop{
+    background-color: var(--blue-pause);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-reset{
+    background-color: var(--red-reset);
+    color: white;
+    font-weight: 700;
+}
